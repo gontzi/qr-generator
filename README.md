@@ -1,29 +1,22 @@
-# Astro + Tailwind CSS Starter Template
+# Generador de QR
 
-Este es un template minimalista para proyectos con Astro y Tailwind CSS, configurado con modo oscuro por defecto. puedes ver el ejemplo [aquí](https://astro-template.azaldev.com)
+Escribe un texto o un enlace y descarga tu código QR al momento. Sin registros ni anuncios.
 
-## 🚀 Características
+## Qué hace
 
-- ⚡️ Astro para un rendimiento óptimo
-- 🎨 Tailwind CSS para estilos rápidos y flexibles
-- 🌙 Modo oscuro por defecto
-- 📱 Diseño responsive
+- Genera el QR en el navegador a partir de cualquier texto o URL. No se envía nada a ningún servidor.
+- Opcionalmente, pone una imagen (tu logo, por ejemplo) en el centro del código.
+- Lo descargas como `qrcode.png`.
+- Interfaz de widgets con estética inspirada en Nothing, con reloj incluido.
 
-## 🛠️ Uso
+## Stack
 
-1. Haz clic en "Use this template" para crear un nuevo repositorio con esta estructura.
-2. Clona tu nuevo repositorio.
-3. Navega al directorio del proyecto e instala las dependencias:
+[Astro](https://astro.build) 5 · Tailwind CSS · [`qrcode`](https://www.npmjs.com/package/qrcode)
 
-   ```bash
-   npm install
+## Desarrollo
 
-## Contributing
-
-Si deseas contribuir a este proyecto, por favor sigue los siguientes pasos:
-
-1. Haz un fork del repositorio.
-2. Crea una nueva rama para tus cambios (`git checkout -b feature/nueva-funcionalidad`).
-3. Realiza los cambios necesarios y haz commits (`git commit -m 'Agrega nueva funcionalidad'`).
-4. Sube los cambios a tu rama (`git push origin feature/nueva-funcionalidad`).
-5. Crea un Pull Request en GitHub y describe los cambios que has hecho.
+```bash
+npm install
+npm run dev     # http://localhost:4321
+npm run build   # genera dist/
+```
